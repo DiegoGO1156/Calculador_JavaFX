@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="328.0" style="-fx-background-color: #899CF0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.diegogarcia.system.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="467.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo%20del%20GG.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textField" alignment="CENTER_RIGHT" editable="false" layoutX="16.0" layoutY="13.0" prefHeight="111.0" prefWidth="295.0" style="-fx-background-radius: 20; -fx-background-color: #F2CF94;">
+         <font>
+            <Font name="Arial Narrow" size="22.0" />
+         </font></TextField>
+      <GridPane layoutX="8.0" layoutY="134.0" prefHeight="322.0" prefWidth="311.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button_porcentaje" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="\%" textAlignment="CENTER" />
+            <Button fx:id="button_dividido" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="1/x" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="button_exponente" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="X²" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button_raiz" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="sqrt" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button_div" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #DBB567;" text="/" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="button_7" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="7" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="button_8" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="8" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button_9" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="9" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="button_por" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #DBB567;" text="*" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="button_4" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="4" textAlignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="button_5" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="button_6" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="6" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="button_menos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #DBB567;" text="-" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="button_1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="1" textAlignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="button_2" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="2" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="button_3" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="button_mas" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #DBB567;" text="+" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="button_negativo" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="+/-" textAlignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="button_0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="button_punto" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #A765DB;" text="." textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="button_igual" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #99C0ED;" text="=" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="button_ce" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #EDCF4A;" text="CE" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Button fx:id="button_c" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #EDCF4A;" text="C" textAlignment="CENTER" GridPane.columnIndex="2" />
+            <Button fx:id="button_back" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="51.0" style="-fx-background-radius: 15; -fx-background-color: #EDCF4A;" text="BACK" textAlignment="CENTER" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+      <TextField fx:id="textField2" layoutX="32.0" layoutY="23.0" prefHeight="33.0" prefWidth="279.0" style="-fx-background-radius: 15; -fx-background-color: #F2CF94;" />
+   </children>
+   <effect>
+      <DropShadow height="29.9" radius="13.7075" width="26.93" />
+   </effect>
+</Pane>
